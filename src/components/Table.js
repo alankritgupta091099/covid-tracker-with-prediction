@@ -2,16 +2,16 @@ import React from 'react'
 
 export default function Table() {
     return (
-        <div class="wrapper">        
-            <form class="holder">      
+        <div className="wrapper">        
+            <form className="holder">      
                 <label>Pick a date:</label>
                 <input type="date" name="predictionDate"/>
                 <input type="submit"/>
-                <table class="table table-hover table-bordered results">
+                <table className="table table-hover table-bordered results">
                     <thead>
                         <tr>
-                        <th class="col-md-5 col-xs-5">State</th>
-                        <th class="col-md-4 col-xs-4">Total Cases</th>
+                        <th className="col-md-5 col-xs-5">State</th>
+                        <th className="col-md-4 col-xs-4">Total Cases</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -46,7 +46,7 @@ export default class App extends React.Component {
       getLineColor: d => [0, 0, 0]
     });
     
-
+    console.log(process.env.REACT_APP_MAP_BOX_TOKEN)
     return (
       <>      
       <DeckGL

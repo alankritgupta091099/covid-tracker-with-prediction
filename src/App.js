@@ -1,5 +1,4 @@
 import React from 'react';
-import mapboxgl from 'mapbox-gl';
 import './App.css';
 import {ScatterplotLayer} from 'deck.gl';
 import DeckGL from '@deck.gl/react'

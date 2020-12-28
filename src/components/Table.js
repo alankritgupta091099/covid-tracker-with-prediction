@@ -1,36 +1,31 @@
 import React from 'react'
 
-export default function Table() {
+export default function Table({data, totalCases}) {
     return (
-        <div className="wrapper">        
+        <div className="wrapper">
             <form className="holder">      
-                <label>Pick a date:</label>
+                {/* <label>Pick a date:</label>
                 <input type="date" name="predictionDate"/>
-                <input type="submit"/>
+                <input type="submit"/> */}
+                <h3>Total Cases: {totalCases}</h3>
                 <table className="table table-hover table-bordered results">
                     <thead>
                         <tr>
-                        <th className="col-md-5 col-xs-5">State</th>
+                        <th className="col-md-5 col-xs-5">Country</th>
                         <th className="col-md-4 col-xs-4">Total Cases</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Delhi</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>UP</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>MP</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>UK</td>
-                            <td>0</td>
-                        </tr>
+                        {
+                            data.map(country=>{
+                                return (
+                                    <tr>
+                                        <td>{country.countryName}</td>
+                                        <td>{country.cases}</td>
+                                    </tr>
+                                )
+                            })
+                        }
                     </tbody>
                 </table>
             </form>

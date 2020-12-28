@@ -27,6 +27,9 @@ body {
 
 .wrapper {	
   margin: 5% 0 0 5%;  
+  width:350px; 
+  height:650px; 
+  overflow:auto;
 }
 
 .holder {

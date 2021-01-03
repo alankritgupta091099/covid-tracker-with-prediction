@@ -125,7 +125,7 @@ export default class App extends React.Component {
           layers={layer}
         >
           <StaticMap 
-            mapboxApiAccessToken={'pk.eyJ1IjoiYWxhbmtyaXQiLCJhIjoiY2tqODkwNmpzMHVlYjJ4cnVtYnZ3OWh3diJ9._MvPh1HwVuJZxXSYj0cwYQ'}
+            mapboxApiAccessToken={'pk.eyJ1IjoiYWxhbmtyaXQiLCJhIjoiY2s3ZG9pYm40MGI5MTNobnc5ams4Nm50dSJ9.QgPqHcdj2FeNtpeailF3Bg'}
             mapStyle={'mapbox://styles/mapbox/light-v10'}
           /> 
           <Table className="sidebar" data={this.state.countries} totalCases={this.state.totalCases}/>

@@ -8,7 +8,7 @@ export default function Table({data, totalCases}) {
     const [predictedCases, setPredtctedCases] = useState(0)
     function getdata() {        
         axios
-            .get('http://ec2-13-233-46-118.ap-south-1.compute.amazonaws.com:8080/predict')
+            .get('http://ec2-15-206-116-200.ap-south-1.compute.amazonaws.com:8080/predict')
             .then((result) => {
                 var datesArr = Object.keys(result.data);
                 var finalArr = [];

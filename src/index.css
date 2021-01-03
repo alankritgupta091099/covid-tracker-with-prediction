@@ -12,15 +12,6 @@ code {
     monospace;
 }
 
-.mapContainer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
 body {
 	background: #eee !important;	
 }
@@ -50,4 +41,12 @@ body {
 .counter{
   padding:8px; 
   color:#ccc;
+}
+
+.modal-backdrop {
+  z-index: 1040 !important;
+}
+.modal-content {
+  margin: 2px auto;
+  z-index: 1100 !important;
 }
